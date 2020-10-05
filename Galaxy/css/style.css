@@ -95,34 +95,34 @@ ul.list-sort {
             }
 
 .menu {
-    margin-top:-21px;
+    margin-top: -21px;
     background-color: #00349a;
     height: 50px;
-    width:1539px;
-    
+    width: 1539px;
 }
 
 ul.ol-menu {
     float: left;
     font-family: 'SS-Regular';
-   
 }
-ul.ol-menu li {
-   
-    font-size: 15px;
-    display: block;
-    vertical-align: middle;
-    position: relative;
-    float: left;
-}
-    ul.ol-menu li a {
-        display: inline-block;
-        font-size: 14px;
-        color: #fff;
-        line-height: 50px;
-        padding: 0 10px;
-        text-transform: uppercase;
+
+    ul.ol-menu li {
+        font-size: 15px;
+        display: block;
+        vertical-align: middle;
+        position: relative;
+        float: left;
     }
+
+        ul.ol-menu li a {
+            display: inline-block;
+            font-size: 14px;
+            color: #fff;
+            line-height: 50px;
+            padding: 0 10px;
+            text-transform: uppercase;
+        }
+
 .info-detail {
     margin-top: 21px;
     background: url("../images/bn-2-bg.png") no-repeat scroll center top / cover;
@@ -134,26 +134,29 @@ ul.ol-menu li {
 }
 
 h2.txt-h2 {
-   
     font-family: 'SS-Regular';
     text-align: justify;
 }
+
 .form-group {
     font-family: 'SS-Regular';
-    font-size:18px
+    font-size: 18px
 }
+
 ul.ul-edit {
     text-align: center;
     list-style: none;
 }
+
     ul.ul-edit li {
         float: left;
         padding-left: 5px;
-      /*  text-decoration: none;*/
+        /*  text-decoration: none;*/
         vertical-align: middle;
     }
+
         ul.ul-edit li > input[type=radio] + a.border {
-           /* display: inline-block;*/
+            /* display: inline-block;*/
             padding: 9px 15px;
             border: 1px solid #00349a;
             width: 160PX;
@@ -161,24 +164,25 @@ ul.ul-edit {
             height: 40px;
             border-radius: 20px;
             text-decoration: none;
-            
         }
+
 .txt-p {
-    line-height : 60px;
-    margin :0 
-}
-form {
-    width : 100%;
-}
-form h3.txt{
-    font-size : 18px
+    line-height: 60px;
+    margin: 0
 }
 
-ul.ul-edit-1 li {
-  
-   
-  padding-bottom : 15px
+form {
+    width: 100%;
 }
+
+    form h3.txt {
+        font-size: 18px
+    }
+
+ul.ul-edit-1 li {
+    padding-bottom: 15px
+}
+
     ul.ul-edit-1 li input {
         width: 100%;
         display: inline-block;
@@ -190,8 +194,9 @@ ul.ul-edit-1 li {
         border-radius: 20px;
         background: #FFFFFF;
         color: #00349a;
-        text-indent : 15px;
+        text-indent: 15px;
     }
+
     ul.ul-edit-1 li button {
         display: inline-block;
         width: 170px;
@@ -203,13 +208,107 @@ ul.ul-edit-1 li {
         border-radius: 50px;
         border: 1px solid transparent;
         text-transform: uppercase;
-      text-align : center;
-      margin : auto
+        text-align: center;
+        margin: auto
     }
 
-.img{
+.img {
     padding: 25px
 }
-.color{
 
+.txt-h {
+    font-family: 'SS-Regular';
+    font-size: 18px
+}
+
+.part-1 {
+    padding-top: 160px;
+    width: 360px;
+    height: 360px;
+}
+
+ul.part-order {
+    width: 360px;
+    height: 72px;
+    display: inline-block;
+    font-family: 'SS-Regular';
+    font-size: 15px
+}
+
+    ul.part-order li {
+        float: left;
+        display: inline-block;
+        padding: 5px 20px 10px 0;
+        text-align: center
+    }
+
+        ul.part-order li label {
+            display: inline-block;
+        }
+
+.part-order li label span {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    border: 1px solid #ededed;
+    margin-bottom: 5px;
+    border-radius: 30px
+}
+
+ul.part-order li label strong {
+    margin-top : 5px;
+    display: block
+}
+li.black-li span {
+    background-color: #5c5658
+}
+li label.yellow-li span {
+    background-color : greenyellow
+}
+li label.Pink-li span {
+    background-color : pink
+}
+ul.part-order2 {
+    width: 360px;
+    height: 78px;
+    display: inline-block;
+    font-family: 'SS-Regular';
+    font-size: 15px
+}
+.ss2 {
+    background-image: url(../images/bn-3-bg.png);
+    /*  overflow: scroll;*/
+    /*   background-position : center;*/
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+}
+.txt-h4 {
+    padding-top : 50px;
+    font-family: 'SS-Regular';
+    font-size: 24px;
+    color:whitesmoke;
+
+}
+.txt-1 {
+    padding-top: 25px;
+    font-family: 'SS-Regular';
+    font-size: 14px;
+    color: whitesmoke;
+}
+.txt-2 {
+    padding-top: 0px;
+    font-family: Arial;
+    font-size: 14px;
+    color: white;
+}
+.txt-3 {
+    padding-top: 18px;
+    font-family: 'SS-Regular';
+    font-size: 14px;
+    color: whitesmoke;
+}
+.img-1 {
+    padding-bottom:0;
+    padding-left : 50px;
+    text-align : center
 }
