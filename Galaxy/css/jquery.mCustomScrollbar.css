@@ -162,7 +162,8 @@ x-axis
 		left: 0;
 	}
 
-	.mCustomScrollBox + .mCSB_scrollTools.mCSB_scrollTools_horizontal,
+	.
+	+ .mCSB_scrollTools.mCSB_scrollTools_horizontal,
 	.mCustomScrollBox + .mCSB_scrollTools + .mCSB_scrollTools.mCSB_scrollTools_horizontal{ bottom: -26px; } /* scrollbar position: outside */
 
 	.mCSB_scrollTools.mCSB_scrollTools_horizontal a + .mCSB_draggerContainer{ margin: 0 20px; }
@@ -259,6 +260,7 @@ yx-axis
 	
 	.mCS-dir-rtl > .mCSB_inside > .mCSB_container_wrapper{ /* RTL direction/left-side scrollbar */
 		margin-right: 0;
+
 		margin-left: 30px;
 	}
 	

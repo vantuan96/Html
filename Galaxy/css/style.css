@@ -1,4 +1,4 @@
-
+﻿
 @font-face {
     font-family: 'SS-Bold';
     src: url('../fonts/SharpSans/SharpSans-Bold.eot');
@@ -13,11 +13,11 @@
 }
 
 .panel {
-    background-image: url(../images/bn-1-bg.png);
-    /*  overflow: scroll;*/
-    /*   background-position : center;*/
     background-color: #cccccc;
     background-repeat: no-repeat;
+    /* height: 600px;*/
+    margin-top: 21px;
+    background: url(../images/bn-1-bg.png) no-repeat scroll center top / cover;
 }
 
 .container {
@@ -97,8 +97,8 @@ ul.list-sort {
 .menu {
     margin-top: -21px;
     background-color: #00349a;
+    width: 100%;
     height: 50px;
-    width: 1539px;
 }
 
 ul.ol-menu {
@@ -180,7 +180,8 @@ form {
     }
 
 ul.ul-edit-1 li {
-    padding-bottom: 15px
+    padding-bottom: 15px;
+    list-style: none
 }
 
     ul.ul-edit-1 li input {
@@ -232,14 +233,14 @@ ul.part-order {
     height: 72px;
     display: inline-block;
     font-family: 'SS-Regular';
-    font-size: 15px
+    font-size: 15px;
 }
 
     ul.part-order li {
         float: left;
         display: inline-block;
         padding: 5px 20px 10px 0;
-        text-align: center
+        text-align: center;
     }
 
         ul.part-order li label {
@@ -256,59 +257,437 @@ ul.part-order {
 }
 
 ul.part-order li label strong {
-    margin-top : 5px;
+    margin-top: 5px;
     display: block
 }
+
 li.black-li span {
     background-color: #5c5658
 }
+
 li label.yellow-li span {
-    background-color : greenyellow
+    background-color: greenyellow
 }
+
 li label.Pink-li span {
-    background-color : pink
+    background-color: pink
 }
+
 ul.part-order2 {
     width: 360px;
     height: 78px;
     display: inline-block;
     font-family: 'SS-Regular';
-    font-size: 15px
+    font-size: 15px;
+    list-style: none
 }
+
 .ss2 {
-    background-image: url(../images/bn-3-bg.png);
+    /*background-image: url(../images/bn-3-bg.png);*/
     /*  overflow: scroll;*/
     /*   background-position : center;*/
     background-color: #cccccc;
     background-repeat: no-repeat;
+    background: url(../images/bn-3-bg.png) no-repeat scroll center top / cover;
 }
+
 .txt-h4 {
-    padding-top : 50px;
+    padding-top: 50px;
     font-family: 'SS-Regular';
     font-size: 24px;
-    color:whitesmoke;
-
+    color: whitesmoke;
 }
+
 .txt-1 {
     padding-top: 25px;
     font-family: 'SS-Regular';
     font-size: 14px;
     color: whitesmoke;
 }
+
 .txt-2 {
     padding-top: 0px;
     font-family: Arial;
     font-size: 14px;
     color: white;
 }
+
 .txt-3 {
     padding-top: 18px;
     font-family: 'SS-Regular';
     font-size: 14px;
     color: whitesmoke;
 }
+
 .img-1 {
-    padding-bottom:0;
-    padding-left : 50px;
-    text-align : center
+    padding-bottom: 0;
+    padding-left: 50px;
+    text-align: center
 }
+
+.list-custom {
+    /*height: 340px;
+    font-family: 'SS-Regular';
+    font-size: 18px;
+    overflow:auto;
+    width:585px;*/
+    padding: 15px 0px;
+    min-height: 1px;
+    max-height: 479px
+}
+
+.txt5 {
+    margin-top: 10px;
+    font-family: 'SS-Regular';
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+h2.txt5 strong {
+    font-family: 'SS-Bold';
+}
+
+.list-custom-1 {
+    height: 340px;
+    font-family: 'SS-Regular';
+    font-size: 12px;
+    overflow: auto;
+    width: 585px;
+}
+
+.scroll-container {
+    width: 555px;
+    height: 427px
+}
+
+.ads {
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    height: 600px;
+    margin-top: 21px;
+    background: url("../images/bn-4-bg.png") no-repeat scroll center top / cover;
+}
+
+.ga-luser-box {
+    height: 340px;
+    overflow: auto;
+    font-family: 'SS-Regular';
+    font-size: 14px;
+}
+
+.txt-6 {
+    margin-top: 35px;
+    font-family: 'SS-Regular';
+    font-size: 33px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.txt-7 {
+    /* margin-top: 27px;*/
+    font-family: 'SS-Regular';
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+.txt-8 {
+    margin-top: 40px;
+    font-family: 'SS-Regular';
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: justify
+}
+
+.content {
+    background: #f5f5f5;
+}
+
+.txt-9 {
+    margin-top: 40px;
+    font-family: 'SS-Regular';
+    font-size: 30px;
+    padding-left: 10px;
+    text-align: justify;
+    font-weight: bold;
+}
+
+.txt-10 {
+    margin-top: 40px;
+    font-family: 'SS-Regular';
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: justify
+}
+
+.content-1 {
+    background-color: #d0d8e3;
+}
+
+.txt-11 {
+    margin-top: 40px;
+    font-family: 'SS-Regular';
+    font-size: 28px;
+    padding-left: 10px;
+    text-align: justify;
+    font-weight: bold;
+    text-align: center
+}
+
+.txt-12 {
+    /*  margin-top: 10px;*/
+    font-family: 'SS-Regular';
+    font-size: 14px;
+    padding-left: 10px;
+    text-align: justify;
+    text-indent: 30px;
+    text-align: center
+}
+
+.img-2 {
+    padding: 70px 0 0
+}
+
+.content-2 {
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    height: 551px;
+    background: url("../images/bn-7-bg.jpg") no-repeat scroll center top / cover;
+}
+
+.txt-13 {
+    margin-top: 95px;
+    font-family: 'SS-Regular';
+    font-size: 28px;
+    padding-left: 10px;
+    text-align: justify;
+    font-weight: bold;
+    color: white;
+}
+
+.txt-14 {
+    margin-top: 15px;
+    font-family: 'SS-Regular';
+    font-size: 13px;
+    padding-left: 10px;
+    text-align: justify;
+    color: white;
+}
+
+.img-3 {
+    margin-top: 90px;
+    padding-left: 100px
+}
+
+ul.xyz {
+}
+
+    ul.xyz li {
+        float: left;
+        padding-left: 10px;
+        list-style: none
+    }
+
+.content-3 {
+    background-color: #d0d8e3;
+}
+
+ul.abc {
+    margin: 0 -5px;
+}
+
+.abc li {
+    float: left;
+    padding: 0 5px;
+    list-style: none;
+    width: 33.333333%;
+    position: relative
+}
+
+ul.abc li .abc1 {
+    padding-left: 20px;
+}
+
+.txt-15 {
+    margin-top: 40px;
+    font-family: 'SS-Regular';
+    font-size: 24px;
+    padding-left: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.xxx tr th {
+    text-align: center;
+    vertical-align: middle;
+    font-family: SS-Regular;
+    font-size: 12px;
+}
+
+    .xxx tr th p {
+        font-family: SS-Bold;
+        font-size: 13px;
+        color: #00349a;
+        margin: 5px 0;
+    }
+
+.xxx tr td {
+    font-family: 'SS-Regular';
+    font-size: 12px;
+    text-align: center
+}
+
+    .xxx tr td:first-child {
+        text-align: left;
+        font-family: SS-Bold;
+        font-size: 13px;
+    }
+
+.of-news-item {
+    float: left;
+    width: 280px;
+    margin-right: 28px;
+}
+
+.txt-16 {
+    margin-bottom: 20px;
+    font-family: 'SS-Regular';
+    font-size: 30px;
+    text-align: center
+}
+
+.net {
+    position: relative;
+}
+
+.of-news-item h3 {
+    font-family: 'SS-Regular';
+    font-size: 12px;
+    margin: 10px 0;
+    height: 30px;
+}
+
+.of-news {
+    padding: 15px 0;
+    margin-bottom: 40px;
+    height: 300px;
+}
+
+.of-news-item img {
+    width: 100%;
+}
+
+.of-news-slick {
+    margin-left: -60px;
+}
+
+    .of-news-slick .slick-dots {
+        position: absolute;
+        bottom: 29px;
+        display: block;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        text-align: center;
+    }
+
+        .of-news-slick .slick-dots li {
+            position: relative;
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            padding: 0;
+            cursor: pointer;
+        }
+
+            .of-news-slick .slick-dots li button {
+                font-size: 0;
+                line-height: 0;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 5px;
+                cursor: pointer;
+                color: transparent;
+                border: 0;
+                outline: none;
+                background: transparent;
+            }
+
+            .of-news-slick .slick-dots li.slick-active button:before {
+                padding-bottom: 100px;
+                opacity: .75;
+                color: black;
+            }
+
+            .of-news-slick .slick-dots li button::before {
+                font-size: 30px;
+                line-height: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 20px;
+                height: 20px;
+                content: "•";
+                text-align: center;
+                opacity: 0.25;
+                color: black;
+                -webkit-font-smoothing: antialiased;
+            }
+
+.footer {
+    margin-top: 40px;
+    background-color: #d0d8e3;
+    padding: 30px 0;
+    text-align: center
+}
+
+.txt-17 {
+    margin-top: 15px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.txt-18 {
+    margin-top: -10px;
+    font-family: Arial;
+    font-size: 14px;
+}
+
+.header-1 {
+    height: 67px;
+}
+
+.img-5 {
+    /* width: 100%;*/
+    margin-top: 10px;
+}
+
+.menu-bar {
+    position: absolute;
+    display: block;
+    top: 0;
+    font-family: Arial;
+    left: 450px;
+}
+
+ul.menu-bar li {
+    float: left;
+    list-style: none;
+}
+
+    ul.menu-bar li a {
+        display: block;
+     
+        height: 67px;
+        padding-left: 25px;
+        line-height: 120px;
+        font-size: 14px;
+        text-align: center
+    }
+    ul.menu-bar li a span {
+        color : darkslategrey;
+        text-decoration : none
+    }
