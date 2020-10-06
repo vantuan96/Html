@@ -16,7 +16,7 @@
     background-color: #cccccc;
     background-repeat: no-repeat;
     /* height: 600px;*/
-    margin-top: 21px;
+    margin-top: 0px;
     background: url(../images/bn-1-bg.png) no-repeat scroll center top / cover;
 }
 
@@ -667,10 +667,9 @@ ul.abc li .abc1 {
 
 .menu-bar {
     position: absolute;
-    display: block;
     top: 0;
     font-family: Arial;
-    left: 450px;
+    right: 250px;
 }
 
 ul.menu-bar li {
@@ -679,15 +678,139 @@ ul.menu-bar li {
 }
 
     ul.menu-bar li a {
+        /*display: block;
+        padding-left: 25px;*/
+        /*  line-height: 90px;*/
+        /*font-size: 14px;
+        text-align: center*/
         display: block;
-     
         height: 67px;
-        padding-left: 25px;
-        line-height: 120px;
-        font-size: 14px;
-        text-align: center
+        padding: 10px 13px 0;
+        font-size: 12px;
+        color: #211f1f;
+        text-align: center;
+        text-decoration: none
     }
-    ul.menu-bar li a span {
-        color : darkslategrey;
-        text-decoration : none
+
+        ul.menu-bar li a span {
+            color: darkslategrey;
+            text-decoration: none;
+            display: block;
+            padding-top: 5px;
+        }
+
+        ul.menu-bar li a i {
+            display: block;
+            background-image: url(../images/imenu.png);
+            background-repeat: no-repeat;
+            height: 28px;
+            margin: 0 auto;
+        }
+
+.icon-mobile {
+    width: 15px;
+    background-position: -3px 0;
+}
+
+.icon-tablet {
+    width: 33px;
+    background-position: -18px 0;
+}
+
+.icon-apple {
+    width: 21px;
+    background-position: -53px 0;
+}
+
+.icon-pk {
+    width: 30px;
+    background-position: -115px 0;
+}
+
+.icon-lab {
+    width: 38px;
+    background-position: -76px 0;
+}
+
+.icon-change {
+    width: 33px;
+    background-position: -147px 0;
+}
+
+.icon-saleoff {
+    width: 36px;
+    background-position: -180px 0;
+}
+
+.icon-tragop {
+    width: 28px;
+    background-position: -215px 0;
+}
+
+.icon-km {
+    width: 30px;
+    background-position: -246px 0;
+}
+
+.icon-news {
+    width: 30px;
+    background-position: -276px 0;
+}
+
+.icon-search {
+    display: block;
+    width: 24px;
+    margin: 0 auto;
+    background-position: -306px 0;
+}
+
+.search {
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+    text-align: center;
+    height: 67px;
+    padding: 10px 15px 0;
+    cursor: pointer;
+    float: left;
+    position: absolute;
+    top: 0;
+    font-family: Arial;
+    right: 160px;
+}
+
+    .search i {
+        display: block;
+        background-image: url(../images/imenu.png);
+        background-repeat: no-repeat;
+        height: 28px;
+        margin: 0 auto;
+    }
+
+    .search span {
+        color: darkslategrey;
+        text-decoration: none;
+        display: block;
+        font-size: 13px;
+        padding-top: 5px;
+    }
+
+.cosle {
+    position: absolute;
+    margin: -50px 0;
+    font-family: Arial;
+    right: 40px;
+       
+}
+    .cosle a {
+        text-decoration: none;
+    }
+
+    .cosle a span {
+        color: darkslategray;
+        font-size: 12px;
+    }
+
+    .cosle p {
+        color: #c91010;
+        font-size: 18px;
     }
