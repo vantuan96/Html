@@ -95,23 +95,29 @@ ul.list-sort {
             }
 
 .menu {
-    margin-top: -21px;
-    background-color: #00349a;
-    width: 100%;
-    height: 50px;
+     height: 50px; 
+    background: #00349a;
 }
-
+.top {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
 ul.ol-menu {
     float: left;
     font-family: 'SS-Regular';
 }
 
     ul.ol-menu li {
-        font-size: 15px;
+      
+        padding-left:30px;
         display: block;
-        vertical-align: middle;
+        left: -70px;
         position: relative;
         float: left;
+        
     }
 
         ul.ol-menu li a {
@@ -121,6 +127,7 @@ ul.ol-menu {
             line-height: 50px;
             padding: 0 10px;
             text-transform: uppercase;
+            text-decoration: none
         }
 
 .info-detail {
@@ -146,25 +153,53 @@ h2.txt-h2 {
 ul.ul-edit {
     text-align: center;
     list-style: none;
+    margin-left: -60px
 }
 
     ul.ul-edit li {
         float: left;
-        padding-left: 5px;
-        /*  text-decoration: none;*/
+        padding-left: 20px;
+        display: inline-block;
         vertical-align: middle;
     }
 
-        ul.ul-edit li > input[type=radio] + a.border {
-            /* display: inline-block;*/
-            padding: 9px 15px;
+        ul.ul-edit li label > input[type=radio] {
+            display: none
+        }
+
+            ul.ul-edit li label > input[type=radio] + span {
+                /* display: inline-block;*/
+                /*padding: 9px 15px;
             border: 1px solid #00349a;
             width: 160PX;
             line-height: 40px;
             height: 40px;
             border-radius: 20px;
-            text-decoration: none;
-        }
+            text-decoration: none;*/
+                display: inline-block;
+                cursor: pointer;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-family: 'SS-Regular';
+                font-size: 18px;
+                border: 1px solid #00349a;
+                -webkit-border-radius: 20px;
+                -moz-border-radius: 20px;
+                border-radius: 20px;
+                background: #FFFFFF;
+                color: #00349a;
+            }
+
+/*  .ul-edit li label > input[type=radio] :checked + span {
+                background: #00349a;
+                color: #FFFFFF;
+            }*/
+.ul-edit li label > input[type=radio]:checked + span {
+    background: #00349a;
+    color: #FFFFFF;
+}
 
 .txt-p {
     line-height: 60px;
@@ -185,32 +220,35 @@ ul.ul-edit-1 li {
 }
 
     ul.ul-edit-1 li input {
-        width: 100%;
-        display: inline-block;
-        height: 40px;
-        line-height: 40px;
-        font-family: 'SS-Regular';
-        font-size: 18px;
+        height: 35px;
+        margin-left: -40px;
+        font-size: 16px;
         border: 1px solid #eaebeb;
         border-radius: 20px;
         background: #FFFFFF;
-        color: #00349a;
         text-indent: 15px;
+        width :400px;
     }
 
-    ul.ul-edit-1 li button {
-        display: inline-block;
-        width: 170px;
-        height: 50px;
-        background-color: blue;
-        font-family: 'SS-Regular';
-        font-size: 18px;
-        color: white;
-        border-radius: 50px;
-        border: 1px solid transparent;
-        text-transform: uppercase;
-        text-align: center;
-        margin: auto
+.btn-1 {
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    margin: 30px 0 15px;
+    background-color: blue;
+    font-family: 'SS-Regular';
+    font-size: 18px;
+    color: white;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: -35px;
+    border-radius: 50px;
+    /*  opacity :0;*/
+}
+
+    .btn-1:hover {
+        box-shadow: 0 2px 8px -1px #000;
     }
 
 .img {
@@ -246,31 +284,43 @@ ul.part-order {
         ul.part-order li label {
             display: inline-block;
         }
-
-.part-order li label span {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    border: 1px solid #ededed;
+/*.active {
+    font-family: 'SS-Bold';
+    color: #00349a;
+    border: 1px solid #00349a;
+    font-size:12px;
+}*/
+.part-order li span {
+    display: block;
+    width: 50px;
+    height: 10px;
+    /*  border: 1px solid #ededed;*/
     margin-bottom: 5px;
     border-radius: 30px
 }
 
-ul.part-order li label strong {
+ul.part-order li strong {
     margin-top: 5px;
     display: block
 }
 
 li.black-li span {
-    background-color: #5c5658
+    border: 1px solid #232323;
+    background: #232323;
 }
 
-li label.yellow-li span {
-    background-color: greenyellow
+li.yellow span {
+    border: 1px solid #ffdebb;
+    background: #ffdebb;
 }
 
-li label.Pink-li span {
+li.pink span {
     background-color: pink
+}
+
+li.white span {
+    border: 1px solid #D8D8D8;
+    background: #FFFFFF;
 }
 
 ul.part-order2 {
@@ -669,7 +719,7 @@ ul.abc li .abc1 {
     position: absolute;
     top: 0;
     font-family: Arial;
-    right: 250px;
+    right: 350px;
 }
 
 ul.menu-bar li {
@@ -775,7 +825,7 @@ ul.menu-bar li {
     position: absolute;
     top: 0;
     font-family: Arial;
-    right: 160px;
+    right: 250px;
 }
 
     .search i {
@@ -796,21 +846,69 @@ ul.menu-bar li {
 
 .cosle {
     position: absolute;
-    margin: -50px 0;
+    margin: -45px 0;
     font-family: Arial;
-    right: 40px;
-       
+    right: 130px;
 }
+
     .cosle a {
         text-decoration: none;
     }
 
-    .cosle a span {
-        color: darkslategray;
-        font-size: 12px;
-    }
+        .cosle a span {
+            color: darkslategray;
+            font-size: 12px;
+        }
 
     .cosle p {
         color: #c91010;
         font-size: 18px;
     }
+
+.search-bar {
+     display: none;
+    background: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+}
+
+.sub-search {
+    background-color: black;
+    height: 67px;
+}
+
+.acv {
+    /*  margin-top: 50px;*/
+}
+
+.-logo {
+    margin-top: 10px;
+    width: 150px;
+    position: absolute;
+    left: 150px;
+    top: 5px
+}
+
+.form-2 {
+    padding-right: 80px;
+    margin-top: 15px;
+    margin-left: 200px;
+}
+
+.btn-default {
+    height: 34px;
+}
+
+.closess {
+    position: absolute;
+    margin-top: -35px;
+    font-size: 25px;
+    margin-left: 1150px;
+    color: #ffffff
+}

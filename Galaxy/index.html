@@ -8,7 +8,8 @@
     <link rel="stylesheet" type="text/css" href="Css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="Css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="Css/slick.css" />
-
+    <link rel="stylesheet" type="text/css" href="Css/hover.css" />
+    <link rel="stylesheet" type="text/css" href="Css/hover-min.css" />
     <!-- JS -->
     <script src="js/libs/jquery-1.11.2.min.js"></script>
     <script src="js/libs/bootstrap.min.js"></script>
@@ -16,6 +17,63 @@
     <script src="js/slick.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/functions.js"></script>
+    <script>
+        $(function () {
+            $('.icon-search').click(function () {
+                $('.search-bar').show(200);
+            });
+            $('.closess').click(function () {
+                $('.search-bar').hide(200);
+
+            });
+
+
+
+
+        });
+        $(document).ready(function () {
+            $('.btn_order').click(function () {
+                $('html,body').animate({ scrollTop: $(".info-detail").offset().top - 65 }, 3000)
+
+            });
+            $('.btn_detailOrder').click(function () {
+                $('html,body').animate({ scrollTop: $(".content-4").offset().top }, 2000)
+            });
+
+            $('ul.part-order li').click(function () {
+                $('ul.part-order li').removeClass('active');
+                $(this).addClass('active');
+            });
+            $('.ol-mndh').click(function () {
+                $('html,body').animate({ scrollTop: $(".info-detail").offset().top - 65 }, 2000)
+
+            });
+                $('.ol-rule').click(function () {
+                    $('html,body').animate({ scrollTop: $(".ss2").offset().top - 10 }, 2000)
+
+                });
+            $('#xyz').click(function () {
+                $('html,body').animate({ scrollTop: $(".list-custom").offset().top  }, 2000)
+
+            });
+                $('.compare').click(function () {
+                    $('html,body').animate({ scrollTop: $(".content-4").offset().top }, 2000)
+
+                });
+            var heightTop = $(".header-1").height()
+            $(window).scroll(function () {
+              
+
+                if ($(window).scrollTop() > heightTop) {
+                    $('.menu').addClass('top');
+                } else {
+                    $('.menu').removeClass('top');
+                }
+            })
+         
+
+        });
+    </script>
 </head>
 <body>
     <div class="header-1">
@@ -102,6 +160,25 @@
             </div>
         </div>
     </div>
+    <div class="search-bar">
+        <div class="sub-search">
+            <div class="container">
+                <a>
+                    <img src="file:///C:/Users/ADMIN/Desktop/galaxyA-20200925T095708Z-001/galaxyA/galaxya-at/images/logo-mb.png" class="-logo" />
+                </a>
+                <div class="form-2  input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default">
+                            <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                    </span>
+                    <input type="text" name="text" value="" placeholder="Tìm kiếm Fptshop.com.vn" class="form-control"  />
+
+                </div>
+                <span class="closess">&#x2715;</span>
+            </div>
+        </div>
+    </div>
     <div class="panel ">
         <div class="container">
             <div class="row">
@@ -117,10 +194,10 @@
                     <div class="row">
                         <ul class="list-sort">
                             <li>
-                                <a href="https://www.youtube.com/watch?v=T2dAsyIupNY" class="btn_order">Đặt hàng ngay</a>
+                                <a  class="btn_order hvr-wobble-to-bottom-right " href="javascript:;">Đặt hàng ngay</a>
                             </li>
                             <li>
-                                <a href="https://hocban.vn/viet-hoa-trong-css-su-dung-thuoc-tinh-text-transform" class="btn_detailOrder">Chi tiết sản phẩm</a>
+                                <a href="javascript:;" class="btn_detailOrder hvr-bob ">Chi tiết sản phẩm</a>
                             </li>
                         </ul>
                     </div>
@@ -129,7 +206,7 @@
             </div>
         </div>
     </div>
-    <div class="menu ">
+    <div class="menu top ">
         <div class="container">
 
             <ul class="ol-menu">
@@ -137,12 +214,12 @@
                     <a href="#" title=" Đặt Hàng" class="ol-mndh"> Đặt Hàng</a>
                 </li>
                 <li>
-                    <a href="#" title="Thể lệ">Thể lệ</a>
+                    <a href="#" title="Thể lệ" class="ol-rule">Thể lệ</a>
                 </li>
                 <li>
-                    <a href="#" title="Danh sách đặt hàng">Danh sách đặt hàng</a>
+                    <a href="#" title="Danh sách đặt hàng" id="xyz">Danh sách đặt hàng</a>
                 </li>
-                <li> <a href="#" title=">Giới thiệu sản phẩm">Giới thiệu sản phẩm</a></li>
+                <li> <a href="#" title=">Giới thiệu sản phẩm" class="compare">Giới thiệu sản phẩm</a></li>
                 <li>
                     <a href="#">So sánh với bản 2015</a>
                 </li>
@@ -166,31 +243,31 @@
                         <p class="txt-h">Chọn màu</p>
 
                         <ul class="part-order">
-                            <li>
-                                <label>
+                            <li class="white">
+                               
                                     <span></span>
-                                    <strong>  Trắng  </strong>
-                                </label>
+                                    <p>  Trắng  </p>
+                                
                             </li>
                             <li class="black-li">
-                                <label>
+                               
                                     <span></span>
-                                    <strong>Đen</strong>
-                                </label>
+                                    <p>Đen</p>
+                                
                             </li>
-                            <li>
-                                <label class="yellow-li">
+                            <li class="yellow">
+                               
 
                                     <span></span>
-                                    <strong>Vàng</strong>
-                                </label>
+                                    <p>Vàng</p>
+                                
 
-                            </li>
-                            <li>
-                                <label class="Pink-li">
+                            </li >
+                            <li class="pink">
+                                
                                     <span></span>
-                                    <strong>Hồng</strong>
-                                </label>
+                                    <p>Hồng</p>
+                                
 
                             </li>
                         </ul>
@@ -217,13 +294,18 @@
                         <p>Bạn muốn đặt sản phẩm:</p>
                         <ul class="ul-edit clearfix">
                             <li>
-                                <input type="radio" name="a5" value="a5" checked="checked" />
-                                <a href="#" class="border">Galazy A5</a>
+                                <label>
+                                    <input type="radio" name="as" value="a5" checked="checked" />
+                                    <span>Galazy A5</span>
+                                </label>
                             </li>
                             <li>
-                                <input type="radio" name="name" value="" checked="checked" />
-                                <a href="#" class="border">Galazy A7</a>
+                                <label>
+                                    <input type="radio" name="as" value="a7"  />
+                                    <span>Galazy A7</span>
+                                </label>
                             </li>
+
                         </ul>
                         <p class="txt-p">
                             Giá :
@@ -233,13 +315,13 @@
                             <h3 class="txt">Thông tin của bạn</h3>
                             <ul class="ul-edit-1">
                                 <li>
-                                    <input type="text" name="name" value="" placeholder="Họ Tên " />
+                                    <input type="text" name="name" value="" class="form-control " placeholder="Họ Tên " />
                                 </li>
                                 <li>
-                                    <input type="text" name="name" value="" placeholder="Số điện thoại " />
+                                    <input type="text" name="name"  class="form-control " value="" placeholder="Số điện thoại " />
                                 </li>
                                 <li>
-                                    <button type="button">Đặt ngay</button>
+                                    <button type="button" class="btn-1">Đặt ngay</button>
                                 </li>
                             </ul>
                         </form>
